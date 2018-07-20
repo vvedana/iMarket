@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context="br.com.vvedana.imarket.FinalizaActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.67"
+        android:id="@+id/imgProdDetalhe"
+        android:src="@drawable/sucess" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:padding="5dp"
+        android:background="#FFFFFF"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compra concluída com sucesso!"
+            android:textSize="24sp"
+            android:textColor="#666666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtMSG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agora é só aguardar seus produtos chegarem ;)"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Origem"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtOrigem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Rua..."
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destino"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Rua..."
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destância:  "
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#666666"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtDistancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="10 km"
+                android:layout_weight="1"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo:  "
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#666666"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtTempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1 hora"
+                android:layout_weight="1"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
